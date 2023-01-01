@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+  color: #004196;
+}
+
+body {
+  background: #8fd8eb;
+}
+
+.alphabet-list-1,
+.alphabet-list-2 {
+  text-align: center;
+}
+
+.item {
+  width: 60px;
+  height: 60px;
+  background: #006eff;
+  color: #fff;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 35px;
+  font-size: 30px;
+  text-align: center;
+  border: solid 4px rgb(28, 70, 146);
+  vertical-align: middle;
+  font-family: 'Roboto', sans-serif;
+}
+
+.acertada {
+  background: #00ff22;
+}
+
+.mistaken {
+  background: #ff0000;
+}
+
+.score-timer-container {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+.score,
+.timer {
+  width: 50px;
+  padding: 5px;
+  color: #fff;
+  background-color: #0066ff;
+  border-width: 3px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif; 
+}
+.question-container-ul {
+  height: 100px;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #0066ff;
+}
+.question-container {
+  height: 100%;
+  font-size: initial;
+  display: inline-block;
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.question-text {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-align: left;
+  padding: 5px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif; 
+}
+
+.game-buttons-container {
+  color: #fff;
+  font-size: 20px;
+  height: 50px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+.game-buttons-container-2 {
+  padding-top: 20px;
+  height: 50px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.answer-text {
+  width: 300px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 16px;
+  text-align: center;
+  background-color: #0a94d4;
+  color: #fff;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0066ff;
+  text-align: left;
+  inline-size: 200px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.start-button,
+.end-button,
+.send-button,
+.pasapalabra-button {
+  appearance: button;
+  background-color: #0a94d4;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 120px;
+}
+
+.pasapalabra-button {
+  width: 170px;
+}
+
+.start-button,
+.end-button{
+  background-color: #ff456e;
+}
+
+.send-button{
+  background-color: #00c020;
+}
+
+.send-button:after,
+.pasapalabra-button:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.send-button:main,
+.pasapalabra-button:main,
+.send-button:focus,
+.pasapalabra-button:focus {
+  user-select: auto;
+}
+
+.send-button:hover:not(:disabled),
+.pasapalabra-button:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.send-button:disabled,
+.pasapalabra-button:disabled {
+  cursor: auto;
+}
+
+
+.blink {
+  animation: blink-animation 1s linear infinite;
+  -webkit-animation: blink-animation 1s linear infinite;
+}
+@keyframes blink-animation {
+  0% { opacity: 1.0; }
+   50% { opacity: 0.4; }
+  100% { opacity: 1.0; }
+}
+@-webkit-keyframes blink-animation {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.4; }
+   100% { opacity: 1.0; }
+}
